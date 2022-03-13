@@ -65,8 +65,8 @@ if(!empty($_POST['Name']) and !empty($_POST['Phone']) and !empty($_POST['Last_Na
     <body class="leon">
     <div class="Status">
         <div class="Status__text">Что-то пошло не так, попробуйте еще раз</div>
-        <div class="Status__btn">
-            <a class="Status__btn" href="#">Вернуться</a>
+        <div class="Status__btn__1">
+            <a class="Status__btn" href="http://anleod.ru/">Вернуться</a>
         </div>
     </div>
     </body>
@@ -79,8 +79,8 @@ if(!empty($_POST['Name']) and !empty($_POST['Phone']) and !empty($_POST['Last_Na
     <body class="leon">
     <div class="Status">
         <div class="Status__text">Что-то пошло не так, попробуйте еще раз</div>
-        <div class="Status__btn">
-            <a class="Status__btn" href="#">Вернуться</a>
+        <div class="Status__btn__1">
+            <a class="Status__btn" href="http://anleod.ru/">Вернуться</a>
         </div>
     </div>
     </body>
