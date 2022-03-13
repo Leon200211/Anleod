@@ -462,6 +462,7 @@
 }
 
 
+
 .Status {
     width: 350px;
     height: 400px;
@@ -483,3 +484,29 @@
     text-align: center;
 }
 
+.Status__btn__1 {
+    text-align: center;
+    margin-top: 210px;
+}
+
+.Status__btn {
+
+    border-radius: 25px;
+
+    width: 150px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+
+    display: inline-block;
+    text-decoration: none; /* Убираем подчёркивание */
+    color: black; /* Цвет текста */
+    background-color: yellow;
+}
+
+.Status__btn:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+    background: blue; /* Градиент */
+    color: white;
+}
