@@ -461,3 +461,25 @@
     color: #f38181;
 }
 
+
+.Status {
+    width: 350px;
+    height: 400px;
+    background-color: #261745;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 25px;
+    margin-top: 70px;
+}
+
+.Status__text {
+    font-size: 20px;
+    color: white;
+
+    padding-top: 40px;
+
+    text-align: center;
+}
+
