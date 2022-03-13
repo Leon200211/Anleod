@@ -1,10 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="assets/main.css">
+
+
+</head>
+
 <?php
+
 
 if(!empty($_POST['Name']) and !empty($_POST['Phone']) and !empty($_POST['Last_Name']) and !empty($_POST['Email']) and !empty($_POST['Disc'])) {
 
-    echo 5;
-
-    $to = "leon200207@yandex.ru";
+    $to = "orders@anleod.ru";
 
     $Name = htmlspecialchars($_POST['Name']);
     $Name = urldecode($Name);
@@ -37,13 +47,45 @@ if(!empty($_POST['Name']) and !empty($_POST['Phone']) and !empty($_POST['Last_Na
         "Email: " . $Email . "\n" . "Описание: " . "\n" . $Disc;
 
     if(mail($to, $subject, $mes, $headers)) {
-        echo 123;
+        ?>
+
+        <body class="leon">
+            <div class="Status">
+                <div class="Status__text">Заявка одобрена, ожидайте ответа!</div>
+                <div class="Status__btn">
+                    <a class="Status__btn" href="#">Вернуться</a>
+                </div>
+            </div>
+        </body>
+        </html>
+
+<?php
     } else {
-        echo 321;
+        ?>
+    <body class="leon">
+    <div class="Status">
+        <div class="Status__text">Что-то пошло не так, попробуйте еще раз</div>
+        <div class="Status__btn">
+            <a class="Status__btn" href="#">Вернуться</a>
+        </div>
+    </div>
+    </body>
+    </html>
+<?php
     }
 
 } else {
-    echo 6;
+    ?>
+    <body class="leon">
+    <div class="Status">
+        <div class="Status__text">Что-то пошло не так, попробуйте еще раз</div>
+        <div class="Status__btn">
+            <a class="Status__btn" href="#">Вернуться</a>
+        </div>
+    </div>
+    </body>
+    </html>
+    <?php
 }
 
 
