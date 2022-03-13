@@ -44,7 +44,8 @@ if(!empty($_POST['Name']) and !empty($_POST['Phone']) and !empty($_POST['Last_Na
     $subject = "Клиент";
 
     $mes = "Имя: " . $Name . "\n" . "Фамилия: " . $Last_Name . "\n" .
-        "Email: " . $Email . "\n" . "Описание: " . "\n" . $Disc;
+        "Email: " . $Email . "\n" . "Номер: " . $Phone . "\n" .
+        "Описание: " . "\n" . $Disc;
 
     if(mail($to, $subject, $mes, $headers)) {
         ?>
